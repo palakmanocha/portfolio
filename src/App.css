@@ -6,7 +6,6 @@ body{
   padding: 0;
   width:100%;
 }
-
 .Home{
   height:100vh;
   width:100%;
@@ -88,7 +87,7 @@ body{
 }
 
 .Sidebar>div >ul>li{
-  margin:30%;
+  margin:35%;
   font-family: 'Acme', sans-serif;
   margin-right: 3%;
   transition:transform 1s;
@@ -107,7 +106,7 @@ body{
     
   }
   To{
-    margin-right: 5%;   
+    margin-right: 3%;   
   }
 }
 .About{
@@ -124,50 +123,7 @@ body{
   background-position: center;
   background-image: url('https://images.pexels.com/photos/911819/pexels-photo-911819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
-/* .abt{
-  height:80vh;
-  border:1px solid;
-  color:black;
-  /* width:70%; 
-  background-color: white;
-}
-.content{
-  width:80%;
-  margin-top:12vh;
-  margin-left: 5%;
-  padding:2%;
-  padding-right: 0px;
-  border: 1px solid blue;
-  padding-top: 0px;
-}
-.text{
-  float:left;
-  width:60%;
-  font-size: 20px;
-  border: 1px solid blue;
-  margin-top: 5%;
-}
-.img-con{
-  float:right;
-  height:80vh;
-  width:20%;
-  border: 1px solid blue;
-}
-.transparent1{
-  height:50vh;
-  width:100%;
-  background: none;
-}
-.img{
-  height:30vh;
-  width:100%;
 
-}
-.transparent1{
-  height:20vh;
-  width:100%;
-  background: none;
-} */
 /* font-family: 'Parisienne', cursive; */
 /* font-family: 'Italianno', cursive; */
 /* font-family: 'Calligraffitti', cursive; */
@@ -212,10 +168,63 @@ body{
 .transparent2{
   height:18vh;
   width:100%;
-  /* border: 1px solid blue;   */
+  /* border: 1px solid blupe;   */
 }
 .white{
   width:30%;
   background-color: white;
   height:inherit;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+
+}
+.Skills{
+float: left;
+min-height:100vh;
+width:100%;
+background-color: whitesmoke;
+}
+.skl{
+  width:90%;
+  margin-top:10vh;
+  min-height:88vh;
+  padding-left:3%;
+  padding-bottom: 3%;
+ /* border: 1px solid;  */
+}
+.pic-con{
+  /* border: 1px solid;  */
+  margin:1%;  
+  padding:0%;
+  position: relative; 
+  transition: transform 0.2s;
+}
+.pic{
+  filter: blur(1px);
+}
+.pic-con >p{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:white;
+  font-size: 40px;
+  font-weight: bolder;
+  background-color: rgba(0,0,0,0.2);
+  height: 100%;
+  width:100%;
+  text-align: center;
+  padding-top:15vh;
+  transition: transform 0.2s;
+  font-family: 'Acme', sans-serif;
+
+}
+
+
+.pic-con :hover{
+  transform: scale(1.1);
 }

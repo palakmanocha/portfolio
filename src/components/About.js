@@ -1,9 +1,10 @@
 import React ,{Component} from 'react';
 import Typing from 'react-typing-animation';
 class About extends Component{
+    
     render(){
         return(
-            <div className='About'>
+            <div id='about' className='About'>
                <div className='abt'>
                <div className='content'>
                     <Typing><h1>About</h1></Typing>

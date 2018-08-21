@@ -1,40 +1,43 @@
 import React ,{Component} from 'react';
-// import {Link} from 'react-router-dom'; 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import MaterialIcon, {colorPalette} from 'material-icons-react';
 class Sidebar extends Component{
+    
+
     render(){
         return(
-            <div className='Sidebar'>
+            <div id='sd' className='Sidebar'>
                 <div className='main'>
                     <ul type='none'>
-                        <li>
-                            <i className='icono-home'>Home</i>
-                            <p>
-                                Home
-                            </p>
+                        <li >
+                            <AnchorLink offset='0' href='#home'>
+                                <MaterialIcon id='icon' icon="home" size='40' color='white'/>
+                                 <span className='li'>Home</span>    
+                            </AnchorLink>
                         </li>
-                        <li>
-                            <i className='icono-document'></i>
-                            <p>
-                                Skills
-                            </p>
+                        <li >
+                            <AnchorLink offset='0'  href='#skills'>
+                                <MaterialIcon  icon="local_library" size='40' color='white'/>
+                                <span className='li' >Skills</span>     
+                            </AnchorLink>                      
                         </li>
-                        <li>
-                            <i className='icono-barChart'></i>
-                            <p>
-                                Projects
-                            </p>
+                        <li >
+                            <AnchorLink offset='0' href='#projects'>
+                                <MaterialIcon icon="trending_up" size='40' color='white'/> 
+                                <span className='li'>Projects</span>           
+                            </AnchorLink>
                         </li>
-                        <li>
-                            <i className='icono-heart'></i>
-                            <p>
-                                About
-                            </p>
+                        <li >
+                            <AnchorLink offset='0' href='#about'>
+                                <MaterialIcon icon="info" size='40' color='white'/>
+                                <span className='li'>About</span>     
+                            </AnchorLink>
                         </li>
-                        <li>
-                            <i className='icono-pin'></i>
-                            <p>
-                                Contact
-                            </p>
+                        <li >
+                            <AnchorLink offset='0' href='#contact'>
+                                <MaterialIcon icon="contact_support" size='40' color='white'/>
+                                <span className='li'>Contact</span>
+                            </AnchorLink>
                         </li>
                     </ul>
                 </div>

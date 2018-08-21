@@ -2,7 +2,7 @@ import React ,{Component} from 'react';
 class Nav extends Component{
     render(){
         return(
-            <div className='Nav'>
+            <div id='navbar' className='Nav'>
                 <div className='social'>
                     <a href="">
                         <i className='icon icono-facebook'></i>
