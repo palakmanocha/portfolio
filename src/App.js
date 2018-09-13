@@ -21,7 +21,7 @@ class App extends Component {
 
     if(document.documentElement.scrollTop >= x -y ) {
         for (let index = 0; index < z.length; index++) {
-          z[index].style.color='black';
+          z[index].style.color='black ';
         }
         for (let index = 0; index < u.length; index++) {
           u[index].style.color='black';

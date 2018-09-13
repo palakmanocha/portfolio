@@ -1,4 +1,5 @@
 import React ,{Component} from 'react';
+import MaterialIcon, {colorPalette} from 'material-icons-react';
 class Nav extends Component{
     render(){
         return(
