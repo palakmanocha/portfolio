@@ -3,8 +3,7 @@ import Nav from './components/Nav';
 import Skills from './components/Skills';
 import Home from './components/Home';
 import Sidebar from './components/Sidebar';
-import About
-from './components/About';
+import About from './components/About';
 import './App.css';
 
 class App extends Component {
@@ -15,6 +14,7 @@ class App extends Component {
   }
   handleScroll(){
     var x=document.getElementById('skills').offsetTop;
+    var w=document.getElementById('about').offsetTop;
     var y=document.getElementsByTagName("i")[0].offsetTop;
     var z=document.getElementsByTagName("i");
     var u=document.getElementsByClassName("li");
@@ -27,14 +27,30 @@ class App extends Component {
           u[index].style.color='black';
         }
     }
-    else{
+    if(document.documentElement.scrollTop ==0 ) {
+      for (let index = 0; index < z.length; index++) {
+        z[index].style.color='white ';
+      }
+      for (let index = 0; index < u.length; index++) {
+        u[index].style.color='white';
+      }
+    }
+     if(document.documentElement.scrollTop >= w-y ) {
+      for (let index = 0; index < z.length; index++) {
+        z[index].style.color='white ';
+      }
+      for (let index = 0; index < u.length; index++) {
+        u[index].style.color='white';
+      }
+  }
+   /* else{
       for (let index = 0; index < z.length; index++) {
         z[index].style.color='white';
       }
       for (let index = 0; index < u.length; index++) {
         u[index].style.color='white';
       }
-    }
+    }*/
   }
   render() {    
     return (
@@ -42,8 +58,8 @@ class App extends Component {
         <Nav />
         <Home/>
         <Sidebar/>
-        <About/>    
         <Skills/>   
+        <About/>    
       </div>
     );
   }

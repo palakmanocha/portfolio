@@ -27,7 +27,7 @@ class Sidebar extends Component{
                                 <span className='li'>Projects</span>           
                             </AnchorLink>
                         </li>
-                        <li >
+                        <li >   
                             <AnchorLink offset='0' href='#about'>
                                 <MaterialIcon icon="info" size='40' color='white'/>
                                 <span className='li'>About</span>     
